@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: netflixclone-deployment
+spec: 
+  replicas: 3
+  selector: 
+    matchExpressions:
+    - key: app
+      operator: In
+      values: 
+      - Netflix-Clone
+  strategy: 
+    rollingUpdate: 
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template: 
+    metadata: 
+      labels:
+        app: Netflix-Clone
+      name: Netflix-Clone-Pod
+    spec: 
+      containers: 
+      - image: devopsinsiders/netflix-clone
+        name: netflixclonecont
+        ports: 
+        - containerPort: 80
