@@ -1,4 +1,4 @@
-# 🎥 Netflix Clone AKS Deployment  Using Services
+# 🎥 Netflix Clone AKS Deployment Using Services
 
 This repository contains the necessary YAML files to deploy a Netflix Clone application on Azure Kubernetes Service (AKS). The deployment includes a Deployment controller, a Cluster IP service, and a LoadBalancer service.
 
@@ -21,7 +21,7 @@ kubectl configured to interact with your AKS cluster
 ## 1. Clone the repository:
 
 git clone <Link>
-cd Services-Kubernetes
+cd AKS-Netflix-Clone-SVC
 
 ## 2. Deploy the Netflix Clone application:
 
@@ -63,7 +63,7 @@ Look for the LoadBalancer service and note the EXTERNAL-IP value. Open your web 
 ## 📂 Repository Structure
 
 
-Services-Kubernetes/
+AKS-Netflix-Clone-SVC/
 │
 ├── Deployment_NetflixClone.yaml
 ├── ClusterIP.yaml
