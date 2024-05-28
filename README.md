@@ -1,4 +1,4 @@
-# Netflix Clone AKS Deployment
+# Netflix Clone AKS Deployment  Using Services
 
 This repository contains the necessary YAML files to deploy a Netflix Clone application on Azure Kubernetes Service (AKS). The deployment includes a Deployment controller, a Cluster IP service, and a LoadBalancer service.
 
